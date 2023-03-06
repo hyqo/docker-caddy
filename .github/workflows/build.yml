@@ -7,7 +7,7 @@ on:
 env:
   IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/caddy
   CADDY_MINOR: 2.6
-  CADDY_VERSION: ${{ env.CADDY_MINOR}}.4
+  CADDY_VERSION: 2.6.4
 
 jobs:
   build-image:
