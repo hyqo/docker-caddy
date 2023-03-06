@@ -35,7 +35,7 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           build-args: |
-            "NGINX_VERSION=${{ env.NGINX_VERSION }}"
+            "CADDY_VERSION=${{ env.CADDY_VERSION }}"
           tags: |
             ${{ env.IMAGE }}:latest
             ${{ env.IMAGE }}:${{ env.CADDY_MINOR }}
