@@ -8,6 +8,6 @@ RUN xcaddy build \
 
 FROM caddy:${CADDY_VERSION}-alpine
 
-WORKDIR /app
+WORKDIR /srv/app
 
 COPY --from=app_caddy_builder --link /usr/bin/caddy /usr/bin/caddy
